@@ -16,3 +16,14 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 100px;
+
+  font-size: 48px;
+} */
