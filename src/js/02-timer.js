@@ -37,18 +37,18 @@ const options = {
     const dfTime = options.defaultDate.getTime();
     const futureTime = selectedDates[0].getTime();
     if (dfTime - futureTime >= 0) {
-      console.log('onClose ~ dfTime - futureTime', dfTime - futureTime);
+      // console.log('onClose ~ dfTime - futureTime', dfTime - futureTime);
       this.isActive = false;
       refs.button.disabled = true;
       Notify.warning('Please choose a date in the future');
       return;
     }
-    console.log(selectedDates[0]);
+    // console.log(selectedDates[0]);
     refs.button.disabled = false;
 
     const setIntId = setInterval(() => {
       const deltaTime = futureTime - Date.now();
-      console.log('dfTime', dfTime);
+      // console.log('dfTime', dfTime);
 
       const time = convertMs(deltaTime);
       refs.input.disabled = true;
@@ -58,7 +58,7 @@ const options = {
         clearInterval(setIntId);
       }
 
-      console.log(time);
+      // console.log(time);
     }, TIME_DELAY);
   },
 };
