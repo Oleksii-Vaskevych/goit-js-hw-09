@@ -75,7 +75,7 @@ flatpickr(refs.input, options);
 function onClickBtn() {
   options.start();
 
-  Notify.success('Go-Go-Go');
+  // Notify.success('Go-Go-Go');
 }
 
 function convertMs(ms) {
